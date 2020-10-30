@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>React</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>React</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui est amet
+        culpa eveniet! Temporibus commodi dolor ad molestias cumque tenetur
+        perspiciatis eum distinctio amet, ex obcaecati nesciunt magnam autem
+        cupiditate rem adipisci blanditiis voluptates! Expedita, aperiam
+        voluptates asperiores perferendis nemo ratione nostrum sunt rem,
+        incidunt facere officiis tempore autem blanditiis.
+      </p>
+      <div class="welcome-back"></div>
+    </div>
+
+    <script
+      src="https://unpkg.com/react@16/umd/react.production.min.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel" src="WelcomeBack.js"></script>
+    <script type="text/babel" src="CoolButton.js"></script>
+
+    <script type="text/babel">
+      ReactDOM.render(<WelcomeBack />, document.querySelector(".welcome-back"));
+    </script>
+  </body>
+</html>
